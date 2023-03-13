@@ -67,7 +67,7 @@ header {
 	background-image: url('../img/university-library-g05cb9b892_1920.jpg');
 	background-size: cover;
 	background-position: center;
-	height: 600px;
+	height: 80vh;
 	display: flex;
 	align-items: start;
 	flex-direction: column;
@@ -218,3 +218,81 @@ footer {
 	background-color: #096a2e45;
 	color: #096a2e;
   }
+
+  /* responsiveness */
+
+@media (max-width: 960px) {
+	.container {
+		width: 100%;
+	}
+
+	.welcome-text {
+		width: 100%;
+	}
+
+	#get-started h2 {
+		font-size: 36px;
+	}
+
+	.welcome-text h1 {
+		font-size: 46px;
+	}
+	.menu-items {
+		display: none;
+	}
+	.menu {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#cover {
+		height: 50vh;
+	}
+
+	.gs-box {
+		flex: none;
+		max-width: 100%;
+		margin-left: 0;
+		padding: 15px;
+		box-sizing: border-box;
+	}
+
+	.about-box {
+		flex-direction: column;
+	}
+
+	.about-box-image, .about-box-text {
+		width: 100%;
+	}
+
+	.about-box-text {
+		box-sizing: border-box;
+		padding: 15px;
+	}
+
+	.about-box-text h2 {
+		font-size: 32px;
+	}
+
+	.news-box {
+		width: 100%;
+		margin-right: 0px;
+		margin-bottom: 15px;
+		padding: 15px;
+		box-sizing: border-box;
+	}
+
+	.news-box img {
+		max-width: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 900px) and (min-width: 400px) {
+	.gs-box {
+		flex: none;
+		max-width: 48%;
+		margin-left: 0;
+		padding: 15px;
+		box-sizing: border-box;
+	}
+}
